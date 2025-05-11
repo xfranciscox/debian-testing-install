@@ -1,7 +1,8 @@
 # debian-testing-install
 A how-to-debian installation guide from the testing branch. [ES - EN]
 
-**Resumen de la Guía de Instalación Personalizada de Debian Testing (ES)**
+> [ES]
+**Resumen de la Guía de Instalación Personalizada de Debian Testing**
 
 Esta guía describe los pasos para crear una unidad USB de instalación personalizada de Debian testing con el entorno de escritorio XFCE4, la última versión estable de Mozilla Firefox desde el repositorio oficial de Mozilla y el gestor de inicio LightDM con su herramienta de configuración.
 
@@ -11,11 +12,9 @@ https://cdimage.debian.org/cdimage/daily-builds/daily/arch-latest/amd64/iso-cd/
 ```
 2.  **Crear el USB de Arranque:** Utiliza la herramienta dd en Linux para crear la unidad USB booteable. Reemplaza /dev/sdX con el identificador correcto de tu unidad USB:
 ```bash
-
 sudo dd if=debian-testing-TU_ARQUITECTURA-netinst.iso of=/dev/sdX bs=4M status=progress
 sync
 ```
-
 ¡Precaución! Asegúrate de identificar correctamente tu unidad USB para evitar la pérdida de datos. Puedes usar herramientas como `lsblk` para ayudarte.
 
 3.  **Iniciar la Instalación de Debian:** Arranca tu computadora desde la unidad USB y sigue los pasos de la instalación del sistema base. Configura el idioma, la ubicación, el teclado, el nombre de la máquina, la contraseña de root y la cuenta de usuario.
@@ -49,7 +48,7 @@ sync
 
 10. **Instalar la Última Versión Estable de Firefox desde Mozilla:**
 
-Crea un directorio para almacenar las claves del repositorio APT si no existe:
+    Crea un directorio para almacenar las claves del repositorio APT si no existe:
 ```bash
 sudo install -d -m 0755 /etc/apt/keyrings
 ```
@@ -94,7 +93,9 @@ sudo apt-get update && sudo apt-get install firefox
 
 Esta guía resumida debería ayudarte a crear tu USB de instalación personalizado de Debian testing. Recuerda proceder con precaución, especialmente con el repositorio de terceros.
 
+<hr>
 
+> [EN]
 **Summary of the Debian Testing Custom Installation Guide (English)**
 
 This guide outlines the steps to create a custom Debian testing installation USB drive with the XFCE4 desktop environment, the latest stable version of Mozilla Firefox from Mozilla's official repository, and the LightDM display manager with its configuration tool.
