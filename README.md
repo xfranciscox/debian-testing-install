@@ -87,8 +87,6 @@ sudo apt-get update && sudo apt-get install firefox
 **Consideraciones Importantes:**
 
 * Debian testing podría ser menos estable que las versiones estables.
-* Agregar repositorios de terceros (como el PPA de Mozilla) puede introducir inestabilidad y requiere una gestión cuidadosa de las actualizaciones.
-* Los pasos de instalación de Mozilla Firefox utilizan un repositorio específico de una versión de Ubuntu y **no** se pueden reemplazar con "testing".
 * Ten precaución al gestionar paquetes de diferentes fuentes.
 
 Esta guía resumida debería ayudarte a crear tu USB de instalación personalizado de Debian testing. Recuerda proceder con precaución, especialmente con el repositorio de terceros.
@@ -181,8 +179,6 @@ sudo apt-get update && sudo apt-get install firefox
 **Important Considerations:**
 
 * Debian testing might be less stable than stable releases.
-* Adding third-party repositories (like Mozilla's PPA) can introduce instability and requires careful management of updates.
-* The Mozilla Firefox installation steps use a specific Ubuntu release repository and **cannot** be replaced with "testing".
 * Be cautious when managing packages from different sources.
 
 This summarized guide should help you create your custom Debian testing USB installation. Remember to proceed with caution, especially with the third-party repository.
